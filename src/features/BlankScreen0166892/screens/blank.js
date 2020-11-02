@@ -29,6 +29,8 @@ export class Blank extends React.Component {
         color="#9babd9"
         onPress={() => alert("Pressed!")}
       />
+      <View style={styles.View_8} />
+      <Text style={styles.Text_11}>Sample text</Text>
     </View>
   )
 }
@@ -41,7 +43,29 @@ const styles = StyleSheet.create({
     alignItems: "center",
     alignContent: "center"
   },
-  Button_5: {}
+
+  Button_5: {},
+  View_1: { flexWrap: "nowrap" },
+  View_3: {
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  },
+  Button_5: {},
+  View_8: {
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    flexDirection: "column",
+    flexWrap: "wrap",
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    alignContent: "stretch"
+  },
+  Text_11: { textAlign: "justify" }
 })
 
 function mapStateToProps(state) {
